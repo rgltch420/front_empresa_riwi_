@@ -1,0 +1,54 @@
+@import 'style.css';
+
+body{
+    background-color: var(--primario-negro);
+}
+
+
+.servicios-main{
+    background-color: var(--primario-gris-fondo);
+
+    height: 700px;
+    
+}
+
+.servicio-enc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+    
+    /* Imagen con Overlay (capa oscura) para que el texto resalte y oculte ruidos de imagen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url(../assets/img/principal.avif);
+    
+    background-repeat: no-repeat;
+    background-size: cover;    /* La imagen cubre todo sin deformarse */
+    background-position: center; 
+    
+    /* Altura flexible */
+    min-height: 400px;         /* Altura mínima garantizada */
+    height: 40vh;              /* Se adapta al 60% de la pantalla del usuario */
+    
+    /* Estilo de texto */
+    color: var(--primario-blanco);
+    padding: 0 20px;           
+}
+
+/* Mejora visual para los textos internos */
+.servicio-enc h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.servicio-enc p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.servicios-grid-container{
+    background-color: aqua;
+    height: 200px;
+}
