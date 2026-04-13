@@ -19,7 +19,7 @@ body {
     background-color: var(--primario-gris-fondo);
 }
 
-header {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +29,7 @@ header {
 
 .logo{
     cursor: pointer;
+    justify-content: left;
 }
 
 .nav-list{
@@ -41,13 +42,15 @@ header {
 }
 
 .nav-list li a{
-    transition: all 0.3s ease 0s;  
+    transition: all 0.3s ease 0s; 
+    text-decoration: none;
+    color: var(--primario-negro);
 
 }
 
 .nav-list li a:hover{
 
-    color: var(--secundario-dorado);
+    color: var(--secundario-dorado-luz);
     
 }
 
@@ -63,6 +66,6 @@ header button {
 header button:hover{
 
     background-color: var(--secundario-dorado);
-    
+
 
 }
