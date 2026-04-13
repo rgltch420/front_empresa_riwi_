@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  /* --- COLORES PRIMARIOS (La identidad de la carga y logística) --- */
+  --primario-negro: #1A1A1B;      /* Para textos, menús y secciones fuertes */
+  --primario-blanco: #FFFFFF;     /* Para fondos limpios y legibilidad */
+  --primario-gris-fondo: #F4F4F5; /* Para separar secciones (como el footer o cards) */
+
+  /* --- COLORES SECUNDARIOS (El toque Premium y de Acción) --- */
+  --secundario-dorado: #C5A059;   /* El color principal de botones y logos */
+  --secundario-dorado-luz: #E2C285; /* Para efectos hover o detalles sutiles */
+  --secundario-gris-texto: #5E5E60; /* Para textos menos importantes (descripciones) */
+}
+
