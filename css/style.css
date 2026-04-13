@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* --- COLORES PRIMARIOS (La identidad de la carga y logística) --- */
+  --primario-negro: #1A1A1B;      /* Para textos, menús y secciones fuertes */
+  --primario-blanco: #FFFFFF;     /* Para fondos limpios y legibilidad */
+  --primario-gris-fondo: #F4F4F5; /* Para separar secciones (como el footer o cards) */
+
+  /* --- COLORES SECUNDARIOS (El toque Premium y de Acción) --- */
+  --secundario-dorado: #C5A059;   /* El color principal de botones y logos */
+  --secundario-dorado-luz: #E2C285; /* Para efectos hover o detalles sutiles */
+  --secundario-gris-texto: #5E5E60; /* Para textos menos importantes (descripciones) */
+}
+body {
+    background-color: var(--primario-gris-fondo);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-list li a{
+    transition: all 0.3s ease 0s;  
+
+}
+
+.nav-list li a:hover{
+
+    color: var(--secundario-dorado);
+    
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: var(--secundario-dorado-luz);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover{
+
+    background-color: var(--secundario-dorado);
+    
+
+}
+/* Nosotros */
+
+.subtitulo{
+    color: #E2C285;;
+    letter-spacing: 2px;
+}
+.nosotros{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://plus.unsplash.com/premium_photo-1661963219843-f1a50a6cfcd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;     
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 400px;         
+    color: white;
+    text-align: center;  
+}
+
+.contenido-nosotros h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.descripcion{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
