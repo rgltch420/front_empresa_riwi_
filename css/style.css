@@ -20,6 +20,8 @@ body {
 }
 
 .nav-bar {
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,16 +29,25 @@ body {
 
 }
 
-.logo{
+.logo h2 {
     cursor: pointer;
     justify-content: left;
+    font-family: ;
+    font-weight: 400;
+    font-size: 16px;
 }
+
 
 .nav-list{
     list-style: none;
 }
 
 .nav-list li{
+    font-family: ;
+    font-weight: 600;
+    font-size: 18px;
+    list-style: none;
+    text-transform: capitalize;
     display: inline-block;
     padding: 0px 20px;
 }
