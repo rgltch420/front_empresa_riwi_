@@ -1,54 +1,111 @@
 @import 'style.css';
 
+@import 'style.css';
+
 .hero-section {
-    background-image: url('../assets/img-index/imagen1.png');
+
+    background: linear-gradient(var(--sombra-media), var(--sombra-media)), 
+                url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
     width: 100%;
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px 100px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 0 20px;
+    color: var(--primario-blanco);
 }
-.hero-section h1{
-    font-family: ;
-    font-weight: 400px;
-    font-size: 64px;
-    width: 400px;
-    text-transform: capitalize;
 
+.badge {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+    display: inline-block;
+    color: var(--letra-suave);
 }
-.hero-section p{
-    font-weight: 400;
-    font-size: 18px;
-    width: 400px;
-    padding: 30px 0px;
-}
-.hero-section a button{
-    font-family: ;
+
+.hero-section h1 {
+    font-size: 4.5rem; 
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    color: var(--primario-blanco);
     font-weight: 700;
-    font-size: 15px;
-    width: 135px;
-    height: 65px;
-    border-radius: 50px 0px 50px 0px;
-    background-color: var(--secundario-dorado-luz);
-    border: none;
-    
+    line-height: 1.1;
 }
 
-.hero-img img{
-    width: 500px;
-    height: 500px;
+
+.hero-section h1 span {
+    color: var(--secundario-dorado-luz);
 }
-/* contenedor de las cartas de servicios la maria pa de ctg pal world */
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+    color: var(--letra-suave); 
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hero-section a button {
+    width: 220px; 
+    height: 60px;
+    border-radius: 5px; 
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+}
+
+.button-heroes button {
+    background-color: var(--secundario-dorado);
+    color: var(--primario-negro); 
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+}
+
+.button-heroes button:hover {
+    background-color: var(--secundario-dorado-luz);
+    transform: translateY(-3px);
+}
+
+
+.button-heroe button {
+    background-color: transparent !important;
+    border: 2px solid var(--secundario-dorado-luz) !important;
+    color: var(--primario-blanco) !important;
+    margin-left: 0; /* Limpiamos el margen anterior */
+}
+
+.button-heroe button:hover {
+    background-color: rgba(226, 194, 133, 0.1) !important; 
+    transform: translateY(-3px);
+}
+
 .our-servcies-preview {
     min-height: 100vh;  
     width: 100%;
     background-color: ;
 }  
 
-/* servcie wrapper */
+
 .services-content{
     padding: 5% 8%;
 } 
@@ -59,7 +116,6 @@
     align-items: center;
 
 }
-
 .title-service{
     color: var(--primario-negro) ;
     font-size: 2.5rem;
@@ -72,16 +128,15 @@
     -webkit-text-fill-color: transparent;
     position: relative;
 }
-
 .title-service:after{
     content: "";
     position: absolute;
-    top: 100%;
-    left: 10%;
-    height: 8px;
-    width: 80%;
-    border-radius: 8px;
-    background-color: gray;
+    top: 110%;
+    left: 25%;
+    height: 4px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--secundario-dorado);
 }
 .cards{
     display: grid;
@@ -89,23 +144,22 @@
     gap: 30px;
     margin-top: 80px;
 }
-
 .card{
-    height: 330px;
-    width: 370px;
-    background-color: red;
+    min-height: 350px;
+    width: 100%;
+    max-width: 370px;
+    background-color: var(--primario-blanco);
     padding: 3% 8%;
-    border: 0.2px solid black;
-    border-radius: 8px;
-    transition: .6s;
+    border: 0.2px solid var(--sombra-suave);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--sombra-suave);
+    transition:all .4s ease;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
     overflow: hidden;
 }
-
-
 .card:after{
     content: "";
     position: absolute;
@@ -126,14 +180,19 @@
 }
 
 .card img{
+    width: 80px;
+    height: auto;
     color: black;
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 4.8rem;
+    object-fit: contain;
 }
 
 .card h3{
-    color: black;
+    color: var(--primario-negro);
+    margin-bottom: 15px;
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -143,77 +202,16 @@
     text-align: center;
     width: 100%;
     margin: 12px 0;
-    color: black;
+    color: var(--secundario-gris-texto);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 .card:hover{
-    background-color: transparent;
     transform: translateY(-8px);
-    border-color:green ;
+    border-color: var(--secundario-dorado);
+    box-shadow: 0 15px 40px var(--sombra-fuerte);
 }
 .card:hover img{
-    color: green;
-}
+    filter: sepia(1) saturate(5) hue-rotate(10deg);
+} 
 
-/* 
-.service{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title-service{
-    color: var(--primario-negro) ;
-    font-size: 2rem;
-    -webkit-text-stroke-width: 2px ;
-    -webkit-text-stroke-color: transparent;
-    letter-spacing: 4px;
-    background-color: var(--secundario-dorado-luz);
-    background: linear-gradient(8deg, var(--secundario-gris-texto) 0%, var(--secundario-dorado) 41%, var(--secundario-gris-texto) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-}
-
-.title-service:after{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    height: 8px;
-    width: 80%;
-    border-radius: 8px;
-    background-color: gray;
-}
-.container-cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    margin-top: 80px ;
-}
-.card{
-    height: 330px;
-    width: 370px;
-    background-color: red;
-    padding: 3% 8%;
-    border: 0.2px solid black;
-    border-radius: 8px;
-    transition: .6s;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-}
-
-.card img{
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 4.8rem;
-}
-
-.card h2{
-    color: black;
-    font-size: 1.5rem;\
-    font-weight: ;
-    
-}  */
