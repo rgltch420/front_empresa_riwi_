@@ -66,6 +66,7 @@ header button {
 header button:hover{
 
     background-color: var(--secundario-dorado);
+<<<<<<< HEAD
 }
 
 /* Nosotros */
@@ -192,3 +193,8 @@ header button:hover{
 .stat-etiqueta {
     font-size: 14px;
 }
+=======
+
+
+}
+>>>>>>> origin/main
