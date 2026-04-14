@@ -14,4 +14,88 @@
   --secundario-dorado: #C5A059;   /* El color principal de botones y logos */
   --secundario-dorado-luz: #E2C285; /* Para efectos hover o detalles sutiles */
   --secundario-gris-texto: #5E5E60; /* Para textos menos importantes (descripciones) */
+  --sombra-suave: rgba(0,0,0,0.05);
+  --sombra-media: rgba(0,0,0,0.5);
+  --sombre-fuerte: rgba(197, 160, 89, 0.2);
+  --letra-suave:rgba(255,255,255,0.9);
+}
+body {
+    background-color: var(--primario-gris-fondo);
+}
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%; 
+    background-color: rgba(26, 26, 27, 0.85); 
+    backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.logo h1 {
+    color: var(--secundario-dorado); 
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--primario-blanco);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+
+.nav-list li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--secundario-dorado);
+    transition: width 0.3s ease;
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+}
+
+.nav-list li a:hover {
+    color: var(--secundario-dorado-luz);
+}
+
+.nav-bar .cta-button {
+    padding: 10px 22px;
+    background-color: var(--secundario-dorado);
+    color: var(--primario-negro);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-bar .cta-button:hover {
+    background-color: var(--secundario-dorado-luz);
+    transform: translateY(-2px);
 }
