@@ -63,8 +63,6 @@ body {
     transition: color 0.3s ease;
     position: relative;
 }
-
-
 .nav-list li a::after {
     content: '';
     position: absolute;
@@ -99,6 +97,7 @@ body {
     background-color: var(--secundario-dorado-luz);
     transform: translateY(-2px);
 }
+
 
 /* Nosotros */
 .subtitulo{
