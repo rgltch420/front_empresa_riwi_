@@ -97,5 +97,6 @@ body {
 
 .nav-bar .cta-button:hover {
     background-color: var(--secundario-dorado-luz);
+    color: var(--primario-negro);
     transform: translateY(-2px);
 }
